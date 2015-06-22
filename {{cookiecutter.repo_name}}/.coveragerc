@@ -1,0 +1,9 @@
+[run]
+omit =  tests/*
+        {{cookiecutter.repo_name}}/migrations/*
+        {{cookiecutter.repo_name}}/wsgi.py
+        {{cookiecutter.repo_name}}/settings/*
+        contact/tests.py
+        .tox/*
+        conftest.py
+        setup.py

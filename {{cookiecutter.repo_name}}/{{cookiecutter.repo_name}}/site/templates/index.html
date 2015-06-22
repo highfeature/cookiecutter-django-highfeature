@@ -1,0 +1,48 @@
+{% raw %}
+{% extends 'layout.html' %}
+{% load i18n %}
+
+{% block head %}{% endblock head %}
+
+{% block content %}
+    <section class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div id="anim_img_high">
+                            <img src="{{ STATIC_URL }}images/django.jpg" height="250" width="498" alt="high">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-12">
+                        <h1>{% trans "Django base site." %}</h1>
+                        <div class="page-scroll">
+                            <a class="btn-circle" href="#feature">
+                                <i class="fa fa-angle-double-down animated"></i>
+                            </a>
+                        </div>
+                        <div class="page-scroll"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="feature" class="intro2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>{% trans "feature" %}</h2>
+						<p class="description">
+						</p>
+
+					<a class="logo" href="https://www.linkedin.com/in/ivarsalain"> My Profile in LinkedIn </a>
+
+                <div class="page-scroll"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
+{% endraw %}

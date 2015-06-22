@@ -1,0 +1,107 @@
+{% raw %}
+{% load i18n %}
+{% extends 'layout.html' %}
+{% block title %}{{ siteName }} - {% trans "Project" %} {{ project.name }}{% endblock %}
+
+{% block content %}
+<div class="container">
+
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">{% trans "Project" %}</small> {{ project.name }}</h1>
+            <ol class="breadcrumb">
+                <li><a href="{% url 'homepage' %}">{% trans "Home" %}</a></li>
+                <li><a href="{% url 'project' %}">{% trans "Projects" %}</a></li>
+                <li class="active">{% trans "Details" %}</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-8">
+            <hr>
+            <p><i class="fa fa-clock-o"></i>{% trans "Posted on" %} {{ project.last_update }} {% trans "by" %}
+    {% for author in project.authors_as_list %}
+            {{ author|safe }}
+    {% endfor %}
+            </p>
+            <hr>
+            <img src="{{ STATIC_URL }}images/{{ project.image }}" class="img-responsive">
+            <hr>
+            <p class="lead">{% trans project.short_description %}</p>
+            <p>{{ project.description|safe }}</p>
+            <p><strong>{% trans "homepage and informations" %}</strong></p>
+            <ul>
+                <li><a href="{{ project.homepage }}">{% trans "homepage" %}</a></li>
+                <li><a href="{{ project.url_doc }}">{% trans "documentation" %}</a></li>
+                <li><a href="{{ project.url_tests }}">{% trans "tests" %}</a></li>
+            </ul>
+            <hr>
+
+            {# the add comment box #}
+            {#% load crispy_forms_tags %#}
+            {#% crispy form %#}
+            {#% crispy form form.helper %#}
+            <div class="well">
+                <h4>{% trans "Leave a Comment" %}:</h4>
+                <form role="form">
+                    <div class="form-group">
+                        <textarea class="form-control" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">{% trans "Submit" %}</button>
+                </form>
+            </div>
+            <hr>
+
+            {# the comments #}
+{% for comment in list_comment %}
+            <h3>{{ comment.title }}<small>{{ comment.datetime }}</small></h3>
+            <p>{{ comment.text }}</p>
+            <hr>
+{% endfor %}
+        </div>
+
+        <div class="col-lg-4">
+            {# Project Search #}
+            <div class="well">
+                <h4>{% trans "Project Search" %}</h4>
+                <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                    </span>
+                </div>
+            </div>
+            {# Popular Categories #}
+            <div class="well">
+                <h4>{% trans "Popular Categories" %}</h4>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#dinosaurs">Dinosaurs</a></li>
+                            <li><a href="#spaceships">Spaceships</a></li>
+                            <li><a href="#fried-foods">Fried Foods</a></li>
+                            <li><a href="#wild-animals">Wild Animals</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#alien-abductions">Alien Abductions</a></li>
+                            <li><a href="#business-casual">Business Casual</a></li>
+                            <li><a href="#robots">Robots</a></li>
+                            <li><a href="#fireworks">Fireworks</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {# Side Widget Well #}
+            <div class="well">
+                <h4>Side Widget Well</h4>
+                <p>Bootstrap's default well's work great for side widgets! What is a widget anyways...?</p>
+            </div>
+       </div>
+    </div>
+
+</div>
+{% endblock content %}
+{% endraw %}

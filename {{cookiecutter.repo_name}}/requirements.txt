@@ -1,0 +1,7 @@
+django-crispy-bootstrap==0.1.1.1
+django-crispy-forms==1.4.0
+django-contactform-bootstrap=0.5.9
+django-debug-toolbar==1.3.0
+django-extensions==1.5.5
+raven==4.0.4
+requests==2.7.0

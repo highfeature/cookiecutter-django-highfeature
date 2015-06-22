@@ -1,0 +1,10 @@
+{
+    "full_name": "Alain Ivars",
+    "email": "alainivars@highfeature.com",
+    "project_name": "django-highfeature",
+    "repo_name": "django-highfeature",
+    "project_short_description": "Highfeature Base site",
+    "release_date": "2015-06-10",
+    "year": "2015",
+    "version": "0.1.0"
+}

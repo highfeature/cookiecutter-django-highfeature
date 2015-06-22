@@ -1,0 +1,69 @@
+{% raw %}
+{% load i18n %}
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button class="navbar-toggle" data-target=".navbar-main-collapse" data-toggle="collapse" type="button">
+                <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="{% url 'homepage' %}">
+                <i class="fa fa-arrow-up"></i>
+                <span class="light">SITE_NAME</span>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+{% if url == 'homepage' %}
+                <li class="hidden active"><a href="#page-top"></a></li>
+                <li class="page-scroll"><a href="{% url 'project' %}">{% trans "Projects" %}</a></li>
+                <li class="page-scroll"><a href="{% url 'contact' %}">{% trans "Contact" %}</a></li>
+                <li class="page-scroll"><a href="{% url 'about' %}">{% trans "About" %}</a></li>
+{% elif url == 'project' %}
+                <li class="hidden active"><a href="#page-top"></a></li>
+                <li class="page-scroll active"><a href="{% url 'project' %}">{% trans "Projects" %}</a></li>
+                <li class="page-scroll"><a href="{% url 'contact' %}">{% trans "Contact" %}</a></li>
+                <li class="page-scroll"><a href="{% url 'about' %}">{% trans "About" %}</a></li>
+{% elif url == 'contact' %}
+                <li class="hidden active"><a href="#page-top"></a></li>
+                <li class="page-scroll"><a href="{% url 'project' %}">{% trans "Projects" %}</a></li>
+                <li class="page-scroll active"><a href="{% url 'contact' %}">{% trans "Contact" %}</a></li>
+                <li class="page-scroll"><a href="{% url 'about' %}">{% trans "About" %}</a></li>
+{% elif url == 'about' %}
+                <li class="hidden active"><a href="#page-top"></a></li>
+                <li class="page-scroll"><a href="{% url 'about' %}">{% trans "About" %}</a></li>
+                <li class="page-scroll"><a href="{% url 'project' %}">{% trans "Projects" %}</a></li>
+                <li class="page-scroll"><a href="{% url 'contact' %}">{% trans "Contact" %}</a></li>
+{% endif %}
+{% comment %}
+                todo: Generate all that by python navbar view
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+{% endcomment %}
+            </ul>
+{% get_available_languages as LANGUAGES %}
+{% get_current_language as LANGUAGE_CODE %}
+{% if LANGUAGES|length > 1 %}
+            <form id="language_selector" class="navbar-form navbar-left" action="/i18n/setlang/" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <select class="form-control" name="language">
+                        {% for language in LANGUAGES %}
+                        <option value="{{ language.0 }}" {% if LANGUAGE_CODE == language.0 %}selected="selected"{% endif %}>{{ language.1 }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <button class="btn" type="submit">{% trans "Go" %}</button>
+            </form>
+{% endif %}
+        </div>
+    </div>
+</nav>
+{% endraw %}

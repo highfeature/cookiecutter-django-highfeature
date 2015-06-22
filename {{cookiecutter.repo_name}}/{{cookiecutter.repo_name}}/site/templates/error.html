@@ -1,0 +1,19 @@
+{% raw %}
+{% extends 'layout.html' %}
+
+{% load i18n %}
+{% block title %}{% trans errorTitle %}{% endblock %}
+
+{% block content %}
+<section class="erreur">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-offset-3">
+                <h1>{% trans errorTitle %}</h1>
+                <p>{% trans errorMsg %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock  %}
+{% endraw %}

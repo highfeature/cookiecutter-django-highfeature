@@ -1,0 +1,15 @@
+{% raw %}
+{% load i18n %}
+<div class="row">
+    <div id="footer col-lg-12">
+        <div class="container text-center">
+            <p class="muted credit">
+{% endraw %}{{cookiecutter.repo_name}} by{% raw %}
+                <a href="{% url 'homepage' %}">{% endraw %}
+                {{cookiecutter.full_name}}</a>. Licence BSD 4 .{% raw %}
+                <a href="{% url 'mentions' %}">Mentions légales</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endraw %}

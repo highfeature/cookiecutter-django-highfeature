@@ -1,0 +1,60 @@
+[
+{
+    "pk": 1,
+    "model": "site.project",
+    "fields": {
+        "unix_name": "django",
+        "name": "Django",
+        "homepage": "https://github.com/django/django",
+        "url_doc": "https://docs.djangoproject.com/en/stable/",
+        "url_tests": "",
+        "is_public": 1,
+        "for_customer": 0,
+        "licence": "AGPL",
+        "short_description": "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Thanks for checking it out.",
+        "description": "<p>Read the documentation</p>",
+        "font_awesome": "fa-star",
+        "image": "django.jpg",
+        "authors": "<a target='_blank' href='https://github.com/adrianholovaty'>Adrian Holovaty</a>, \n<a target='_blank' href='https://github.com/malcolmt'>Malcolm Tredinnick</a>, \nand 523 others, Thanks to All...",
+        "last_update": "2013-10-18T11:23:48.111Z"
+    }
+},
+{
+    "pk": 2,
+    "model": "site.project",
+    "fields": {
+        "unix_name": "openerp-sentry",
+        "name": "Module OpenErp Sentry",
+        "homepage": "https://github.com/alainivars/openerp-sentry",
+        "url_doc": "https://github.com/alainivars/openerp-sentry",
+        "url_tests": "https://travis-ci.org/alainivars/openerp-sentry",
+        "is_public": 0,
+        "for_customer": 1,
+        "licence": "GPL v3",
+        "short_description": "Sentry logger for OpenERP v 7.x",
+        "description": "<h3>Sentry logger for OpenERP</h3><p>https://secure.travis-ci.org/alainivars/openerp-sentry.png?branch=master https://coveralls.io/repos/alainivars/openerp-sentry/badge.png https://d2weczhvl823v0.cloudfront.net/alainivars/openerp-sentry/trend.png<h4>Sentry logger for OpenERP 7.xx</h4><p>Work, but use in your development only, it only a beta version :)</p><p>a/ The build don't work in travis, because is not yet set up for this module b/ The coverage is not writing for now, i work on</p><h4>Configuration</h4><ul><li>Generate Sentry DSN</li><li>Add the keyword sentry_dsn in your openerp server config file</li><li>Install dependencies `pip install -r reqs.txt</li><li>Install sentry module in the OpenERP</li><li>Edit the openerp/netsvc.py and add the needs...</li><li>Enjoy it!</li><ul></p>",
+        "font_awesome": "fa-beer",
+        "image": "sentry-600x403.png",
+        "authors": "<a target='_blank' href='https://github.com/ecarreras'>Eduard Carreras</a>, \n<a target='_blank' href='https://github.com/sharoonthomas'>Sharoon Thomas</a>, \n<a target='_blank' href='https://plus.google.com/+AlainIvars/posts'>Alain Ivars</a>",
+        "last_update": "2013-10-18T11:23:48.111Z"
+    }
+},
+{
+    "pk": 1,
+    "model": "auth.user",
+    "fields": {
+        "username": "alainivars",
+        "first_name": "",
+        "last_name": "",
+        "is_active": true,
+        "is_superuser": true,
+        "is_staff": true,
+        "last_login": "2013-10-18T11:23:48.111Z",
+        "groups": [],
+        "user_permissions": [],
+        "password": "pbkdf2_sha256$10000$iSSSiW6WUnsH$dzV1yavHHfgRbA/h9HC1VQKhLvK3pHhrUnhxsGbGjE0=",
+        "email": "alainivars@gmail.com",
+        "date_joined": "2013-10-18T11:08:56.425Z"
+    }
+}
+]

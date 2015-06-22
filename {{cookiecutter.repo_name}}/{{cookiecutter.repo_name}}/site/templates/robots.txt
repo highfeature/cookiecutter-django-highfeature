@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://www.{{cookiecutter.repo_name}}.com/sitemap.xml
+Allow: /

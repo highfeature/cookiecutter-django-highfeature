@@ -1,0 +1,48 @@
+{% raw %}
+{% extends 'layout.html' %}
+{% load i18n %}
+{% block title %}{{ siteName }} - {% trans "Projects" %}{% endblock %}
+
+{% block content %}
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">{% trans "Mentions Légale" %}</h1>
+                <ol class="breadcrumb">
+                    <li><a href="{% url 'homepage' %}">{% trans "Home" %}</a></li>
+                    <li class="active">{% trans "Mentions Légale" %}</li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3>{% trans "Your Partner title" %}</h3>
+                <p>{% trans "Your Partner content" %}</p>
+            </div>
+            <div class="col-md-6">
+                <h3>{% trans "for you title" %}</h3>
+                <p>{% trans "for you content" %}</p>
+            </div>
+            <div class="col-md-6">
+                <h3>{% trans "for you security title" %}</h3>
+                <p>{% trans "for you security content" %}</p>
+            </div>
+            <div class="col-md-12">
+                <h2>{% trans "Privacy Policy" %}</h2>
+                <h3>{% trans "Data Protection title" %}</h3>
+                <p>{% trans "Data Protection content" %}</p>
+                <h3>{% trans "Information Protection title" %}</h3>
+                <p>{% trans "Information Protection content" %}</p>
+                <h3>{% trans "Right to Cancel title" %}</h3>
+                <p>{% trans "Right to Cancel content" %}</p>
+                <h3>{% trans "Cookies title" %}</h3>
+                <p>{% trans "Cookies content" %}</p>
+                <h3>{% trans "Links title" %}</h3>
+                <p>{% trans "Links content" %}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
+{% endraw %}
