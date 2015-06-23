@@ -11,7 +11,26 @@ Features
 * Login/Logout
 
 
-Use (NOT READY TO USE)
+Screenshot
+===========================
+
+.. image:: https://github.com/highfeature/cookiecutter-django-highfeature/raw/dev/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-home.png
+   :target: https://github.com/highfeature/cookiecutter-django-highfeature/raw/dev/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-home.png
+   :alt: Home Screenshot
+
+.. image:: https://github.com/highfeature/cookiecutter-django-highfeature/raw/dev/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-about.png
+   :target: https://github.com/highfeature/cookiecutter-django-highfeature/raw/dev/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-about.png
+   :alt: About Screenshot
+
+.. image:: https://github.com/highfeature/cookiecutter-django-highfeature/raw/dev/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-contact.png
+   :target: https://github.com/highfeature/cookiecutter-django-highfeature/raw/dev/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-contact.png
+   :alt: Contact Screenshot
+
+.. image:: https://github.com/highfeature/cookiecutter-django-highfeature/raw/dev/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-projects.png
+   :target: https://github.com/highfeature/cookiecutter-django-highfeature/raw/dev/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-projects.png
+   :alt: Projects Screenshot
+
+Use
 ===========================
 
     + Add in your setting file::
@@ -83,12 +102,12 @@ Credits
 ===========================
 
 * `django`_
-* `django-rest-framework`_
+* `django_contactform_bootstrap`_
 
 .. _Github: https://github.com/django-sme/django-{{cookiecutter.repo_name}}
 .. _Issue Tracker: https://github.com/django-sme/django-{{cookiecutter.repo_name}}/issues
 .. _django: http://www.djangoproject.com
-.. _django-rest-framework: http://www.django-rest-framework.org
+.. _django_contactform_bootstrap: https://github.com/alainivars/django-contact-form
 
 .. |Build status| image:: https://api.travis-ci.org/django-{{cookiecutter.repo_name}}/django-{{cookiecutter.repo_name}}.svg?branch=develop
    :target: http://travis-ci.org/alainivars/django-{{cookiecutter.repo_name}}
