@@ -5,8 +5,7 @@ Features
 * Functionality as a django application
   - New skeleton django project bootstrap 3
 
-* Ok for that, but what is inside ? look
-    https://github.com/highfeature/cookiecutter-django-highfeature/tree/dev/{{cookiecutter.repo_name}}
+* Ok for that, but what is inside ? look inside {{cookiecutter.repo_name}} directory
 
 
 Use
