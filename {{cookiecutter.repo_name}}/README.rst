@@ -11,7 +11,26 @@ Features
 * Login/Logout
 
 
-Use (NOT READY TO USE)
+Screenshot
+===========================
+
+.. image:: https://github.com/highfeature/cookiecutter-django-highfeature/tree/master/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-home.png
+   :target: https://github.com/highfeature/cookiecutter-django-highfeature/tree/master/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-home.png
+   :alt: Home Screenshot
+
+.. image:: https://github.com/highfeature/cookiecutter-django-highfeature/tree/master/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-about.png
+   :target: https://github.com/highfeature/cookiecutter-django-highfeature/tree/master/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-about.png
+   :alt: About Screenshot
+
+.. image:: https://github.com/highfeature/cookiecutter-django-highfeature/tree/master/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-contact.png
+   :target: https://github.com/highfeature/cookiecutter-django-highfeature/tree/master/%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-contact.png
+   :alt: Contact Screenshot
+
+.. image:: %7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-projects.png
+   :target: /%7B%7Bcookiecutter.repo_name%7D%7D/docs/static/django-highfeature-projects.png
+   :alt: Projects Screenshot
+
+Use
 ===========================
 
     + Add in your setting file::
