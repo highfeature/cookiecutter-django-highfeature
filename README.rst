@@ -43,8 +43,8 @@ Check also for the latest updates of this project on Github_.
 Credits
 ===========================
 
-* `django`_
+* `cookiecutter`_
 
 .. _Github: https://github.com/highfeature/cookiecutter-django-highfeature.git
 .. _Issue Tracker: https://github.com/highfeature/cookiecutter-django-highfeature/issues
-.. _django: http://www.djangoproject.com
+.. _cookiecutter: https://github.com/audreyr/cookiecutter
