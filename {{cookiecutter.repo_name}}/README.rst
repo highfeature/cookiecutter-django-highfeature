@@ -102,12 +102,12 @@ Credits
 ===========================
 
 * `django`_
-* `django-rest-framework`_
+* `django_contactform_bootstrap`_
 
 .. _Github: https://github.com/django-sme/django-{{cookiecutter.repo_name}}
 .. _Issue Tracker: https://github.com/django-sme/django-{{cookiecutter.repo_name}}/issues
 .. _django: http://www.djangoproject.com
-.. _django-rest-framework: http://www.django-rest-framework.org
+.. _django_contactform_bootstrap: https://github.com/alainivars/django-contact-form
 
 .. |Build status| image:: https://api.travis-ci.org/django-{{cookiecutter.repo_name}}/django-{{cookiecutter.repo_name}}.svg?branch=develop
    :target: http://travis-ci.org/alainivars/django-{{cookiecutter.repo_name}}
